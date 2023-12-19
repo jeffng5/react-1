@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  background-color: darkcyan;
+}
+
+div {
+padding-bottom: 25px;
+align-items: center;
+}
+
+.main-event {
+border-top: 20px;
+border-left: 20px;
+border-right: 20px;
+border-bottom: 20px;
+
+}
+
+button{
+border-radius: 8px;
+padding: 6px;
+background-color: crimson;
+color: antiquewhite;
+font-family: Verdana;
+}
+
+p {
+color: black;
+
+}
