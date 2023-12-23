@@ -33,9 +33,13 @@ Answer the following questions below:
 ### An array index is a last resort choice because the list can change. Items can be moved aroudn and be deleted so eth index can get messed up.
 
 - Describe useEffect.  What use cases is it used for in React components?
+### useEffect is used when a component renders, you may want to fetch data from an API. UseEffect is a builtin hook that runs after a rendering of a specific component.
 
 - What does useRef do?  Does a change to a ref value cause a rerender of a component?
+### a useRef is used for accessing an underlying DOM element or setting and clearing timers. A change in the value of ref does not cause a rerender. 
 
 - When would you use a ref? When wouldn't you use one?
+### Setting a timer for code to run or controlling a DOM element (use sparingly). You shouldnt really be using useRef to manipulate the DOM
 
 - What is a custom hook in React? When would you want to write one?
+### A custom hook is a self-written function that can be used repeatedly. You should write one if the same logic/function is used across many components. This can help refactor and unclutter your code. 
