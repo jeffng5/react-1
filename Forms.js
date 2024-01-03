@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 
-const MyForm = ({makeMadlib}) => {
-  const initialState ={noun: "", noun1:"", adjective:"", color:""}
+const MyForm = ({ makeMadlib }) => {
+  const initialState = []
   const [formData, setFormData] = useState({initialState})
   
   
@@ -22,7 +22,7 @@ const MyForm = ({makeMadlib}) => {
 }
     return (
         <>
-        <form className='main-event' onSubmit={handleSubmit}>
+        <form className='main-event'>
         <div>
           <label htmlFor="noun">Noun:</label>
           <input id= "noun" type="text" placeholder= "noun" name = 'noun' value= {formData.noun} onChange= {handleChange}/>
@@ -40,7 +40,7 @@ const MyForm = ({makeMadlib}) => {
         <input id ="color" type="text" placeholder= 'color' name = 'color' value= {formData.color} onChange= {handleChange}/>
         </div>
       </form>
-      <button>Tell me a Story</button>
+      <button onClick={handleSubmit}>Tell me a Story</button>
 {/* 
       <h2> {formData.noun} was with {formData.noun1} and they were very {formData.adjective}. Their favorite color is {formData.color}
 </h2> */}
